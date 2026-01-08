@@ -18,12 +18,13 @@ import {
   X,
 } from "lucide-react";
 
-  const api = import.meta.env.API_URL ;
+
 
 export default function ResultPage() {
   const { analysisResults, topics } = useAppContext();
   const location = useLocation();
   const navigate = useNavigate();
+    const api = import.meta.env.VITE_API_URL ;
 
   const [data, setData] = useState(
     location.state?.analysisData || analysisResults || []

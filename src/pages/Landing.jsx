@@ -27,7 +27,7 @@ export default function LandingPage() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const api = import.meta.env.API_URL ;
+  const api = import.meta.env.VITE_API_URL ;
 
   // Load modern fonts
   useEffect(() => {
@@ -390,7 +390,7 @@ export default function LandingPage() {
               <p className="text-sm font-semibold text-slate-700 mb-3">Aditya Prasad Sahoo</p>
               <div className="flex items-center gap-3">
                 <a 
-                  href="https://linkedin.com/in/yourprofile" 
+                  href="https://www.linkedin.com/in/aditya-prasad-sahoo-1a86b01b9/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-2.5 rounded-xl bg-slate-100 hover:bg-blue-100 text-slate-600 hover:text-blue-600 transition-all duration-300 hover:shadow-md"
@@ -399,7 +399,7 @@ export default function LandingPage() {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a 
-                  href="https://github.com/yourusername" 
+                  href="https://github.com/Adityaprasad02" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-800 text-slate-600 hover:text-white transition-all duration-300 hover:shadow-md"
@@ -408,7 +408,7 @@ export default function LandingPage() {
                   <Github className="w-5 h-5" />
                 </a>
                 <a 
-                  href="https://yourwebsite.com" 
+                  href="https://github.com/Adityaprasad02" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-2.5 rounded-xl bg-slate-100 hover:bg-indigo-100 text-slate-600 hover:text-indigo-600 transition-all duration-300 hover:shadow-md"
