@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.no-export-transition * {
+  transition: none !important;
+  animation: none !important;
+}
+
+
+#pdf-content,
+#pdf-content * {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #999 !important;
+  box-shadow: none !important;
+
+  --tw-gradient-from: initial !important;
+  --tw-gradient-to: initial !important;
+  --tw-gradient-stops: initial !important;
+  --tw-bg-opacity: 1 !important;
+  --tw-text-opacity: 1 !important;
+}
+
+

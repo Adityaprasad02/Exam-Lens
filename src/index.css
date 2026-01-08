@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+
+/* Override any oklch() usage */
+[class*="bg-"], [class*="text-"], [class*="border-"] {
+  color: inherit !important;
+  background-color: inherit !important;
+  border-color: inherit !important;
+}
+
