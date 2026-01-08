@@ -27,6 +27,8 @@ export default function LandingPage() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
+  const api = import.meta.env.API_URL ;
+
   // Load modern fonts
   useEffect(() => {
     const link = document.createElement('link');
@@ -86,7 +88,7 @@ export default function LandingPage() {
         new Blob([JSON.stringify({ request: localTopics })], { type: "application/json" })
       );
 
-      const res = await fetch("http://localhost:8080/upload-pdf", { method: "POST", body: formData });
+      const res = await fetch(`${api}/upload-pdf`, { method: "POST", body: formData });
 
       if (!res.ok) throw new Error("Server error");
 

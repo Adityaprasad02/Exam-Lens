@@ -18,6 +18,8 @@ import {
   X,
 } from "lucide-react";
 
+  const api = import.meta.env.API_URL ;
+
 export default function ResultPage() {
   const { analysisResults, topics } = useAppContext();
   const location = useLocation();
@@ -91,7 +93,7 @@ export default function ResultPage() {
         })
       );
 
-      const res = await fetch("http://localhost:8080/upload-pdf", {
+      const res = await fetch(`${api}/upload-pdf`, {
         method: "POST",
         body: fd,
       });
