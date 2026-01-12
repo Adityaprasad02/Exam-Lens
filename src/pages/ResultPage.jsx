@@ -5,7 +5,7 @@ import { useAppContext } from "./AppContext";
 import ComparisonChart from "./ComparisonChart";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import AnalysisPDF from "./AnalysisPDF";
-import logo from "../../public/image.jpg";
+import logo from "/image.jpg";
 
 import {
   FileText,
