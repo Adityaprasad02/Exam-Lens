@@ -18,7 +18,7 @@ import {
   Download as DownloadIcon,
   CheckCircle2
 } from "lucide-react";
-import logoImage from "../assets/image.jpg";
+import logoImage from "../../public/image.jpg";
 
 export default function LandingPage() {
   const { topics, saveTopics, saveAnalysisResults } = useAppContext();
